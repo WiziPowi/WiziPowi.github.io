@@ -1,18 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb;
   color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
   padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
 }
-h1 {
-  color: #0056b3;
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
-a {
+
+header h1 {
+  font-size: 2rem;
+  color: #1a202c;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills li {
+  background: #edf2f7;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.project {
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.cv-button {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #0056b3;
+  margin-top: 0.5rem;
+  background: #3182ce;
   color: white;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+  background: #2b6cb0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 2rem;
 }
